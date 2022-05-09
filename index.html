@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  
+  <?php include 'enviar.php';?>
   <title>Focus Zone</title>
 </head>
 
@@ -85,16 +86,16 @@
     <!---->
     <section draggable="false" class="container pt-5 " data-v-271253ee="" id="zones">
       <section class="mb-10">
-        <h2 class="fw-bold mb-5 text-center">
+        <h2 class="fw-bold mb-5 text-center" data-aos="fade-up">
           Quins espais ofereix aquest local?
         </h2>
         <div class="row gx-lg-5 mb-5 align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0 ">
+          <div class="col-md-6 mb-4 mb-md-0 "data-aos="fade-down">
             <img
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDN8fG1lZXRpbmd8ZW58MHx8fHwxNjUwNDcxMDMx&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080"
               class="w-100 shadow-4-strong fotofer mb-4 " alt="" aria-controls="#picker-editor" />
           </div>
-          <div class="col-md-6 mb-4 mb-md-0">
+          <div class="col-md-6 mb-4 mb-md-0"data-aos="fade-right">
             <h3 class="fw-bold titolofer" spellcheck="false">Zona Privada</h3>
             <div class="mb-2 text-warning small">
               <i class="fas fa-tv me-2" aria-controls="#picker-editor"></i><span>Sales Insonores&nbsp;</span>
@@ -111,7 +112,7 @@
           </div>
         </div>
         <div class="row gx-lg-5 mb-5 flex-lg-row-reverse align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0 ">
+          <div class="col-md-6 mb-4 mb-md-0 "data-aos="fade-left">
             <img
               src="https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDZ8fG9mZmljZXxlbnwwfHx8fDE2NTA0Nzc2OTQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080"
               class="w-100 shadow-4-strong fotofer mb-4 " alt="" aria-controls="#picker-editor" />
@@ -412,33 +413,45 @@
        Qualsevol dubte o pregunta contacta amb nosaltres i et respondrem el mes aviat possible.
       </p>
     </div>
+    <?php 
+	    $primerNom = $_POST['primerNom'];
+      $cognom = $_POST['cognom'];
+	    $correu = $_POST['correu'];
+      $motiu = $_POST['motiu'];
+	    $missatge = "Nom: "$primerNom\n "Email: "$correu\n "Mensaje: " .$_POST['missatge'];
+
+
+	if(mail('manyajordi@gmail.com', $motiu, $missatge)){
+		echo "Correo enviado";
+	}
+ ?>
     <div class="contact">
       <div class="contact-form">
-        <form>
+        <form method="post" action="">
           <div class="row">
             <div class="input50">
-              <input type="text" placeholder="Primer Nom" />
+              <input type="text" placeholder="Primer Nom" name="primerNom" />
             </div>
             <div class="input50">
-              <input type="text" placeholder="Cognom" />
+              <input type="text" placeholder="Cognom" name="cognom"/>
             </div>
           </div>
           <div class="row">
             <div class="input50">
-              <input type="text" placeholder="Correu Electronic" />
+              <input type="text" placeholder="Correu Electronic" name="correu" />
             </div>
             <div class="input50">
-              <input type="text" placeholder="Motiu" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input100">
-              <textarea placeholder="Missatge"></textarea>
+              <input type="text" placeholder="Motiu" name="motiu"/>
             </div>
           </div>
           <div class="row">
             <div class="input100">
-              <input type="submit" value="Enviar" />
+              <textarea placeholder="Missatge" name="missatge"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input100">
+              <input type="submit" name="submit" />
             </div>
           </div>
         </form>
@@ -449,6 +462,7 @@
           <div class="details">
             <h4>Adreça del Local</h4>
             <p>Carrer de Rosselló 45, Barcelona, Catalunya</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.531587260105!2d2.1429321155055936!3d41.38426057926439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a281d6527b6d%3A0x88d734cb3fa35630!2sCarrer%20del%20Rossell%C3%B3%2C%2045%2C%2008029%20Barcelona!5e0!3m2!1ses!2ses!4v1652110642948!5m2!1ses!2ses" width="180" height="200" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <div class="info-box">
@@ -461,7 +475,7 @@
         <div class="info-box">
           <img src="call" class="contact-icon" alt="" />
           <div class="details">
-            <h4>Call</h4>
+            <h4>Trucan's</h4>
             <a href="tel:+34978685736">+34 978 685 736</a>
           </div>
         </div>
@@ -484,6 +498,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.5/tsparticles.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   <script src="script.js"></script>
 </body>

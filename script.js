@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //______________________________________________________________
 async function inscripsio() {
-  
+
   const { value: email } = await Swal.fire({
     title: "Posa aqui el teu correu electronic",
     input: "email",
@@ -71,8 +71,9 @@ function pop1() {
 Swal.fire({
   title: 'Quants anys tens?',
   icon: 'question',
-  footer:'Edat minima:18 anys.',
+  footer: 'Edat minima:18 anys.',
   input: 'range',
+  grow: 'column',
   color: '#0d8e89',
   inputLabel: 'Edat',
   inputAttributes: {
@@ -83,6 +84,7 @@ Swal.fire({
   inputValue: 25,
 })
 
+// FORMULARI DE CONTACTE
 
 /*
 tsParticles.load("tsparticles", {
@@ -368,3 +370,4 @@ tsParticles.load("tsparticles", {
   zLayers: 100
 });
 */
+AOS.init();
