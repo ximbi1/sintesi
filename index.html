@@ -10,12 +10,11 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <?php include 'enviar.php';?>
   <title>Focus Zone</title>
 </head>
 
 <body>
-  
+
   <header>
     <div class="logo"></div>
     <div class="focus">Focus </div>
@@ -23,57 +22,59 @@
     <div class="toggle"></div>
     <div class="navigation">
       <ul>
-        <button class="btn"onclick="pop1()">entrar</button>
         <li><a href="#home">Menú</a></li>
         <li><a href="#zones">Zones</a></li>
         <li><a href="#services">Serveis</a></li>
         <li><a href="#work">Membresia</a></li>
-        <li><a href="#ofertes">Inscripció</a></li>
-        <li><a href="#reserva">Reserva</a></li>
+        <li><a href="#creadors">Creadors</a></li>
         <li><a href="#contact">Contacte</a></li>
       </ul>
       <div class="social-bar">
         <ul>
           <li>
             <a href="https://facebook.com">
-              <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" target="_blank"
-                alt="" width="112px" height="112px" />
+              <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="112"
+                width="112" height="112" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com">
               <img
                 src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-logotipo-de-icono-de-twitter.png"
-                target="_blank" alt="" width="112px" height="112px" />
+                alt="" width="112" height="112" />
             </a>
           </li>
           <li>
             <a href="https://instagram.com">
-              <img src="instagram" target="_blank" alt="" />
+              <img src="https://icon-library.com/images/instagram-round-icon-png/instagram-round-icon-png-5.jpg" alt=""
+                width="112" height="112" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:focuszone@gmail.com" class="email-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/355/355992.png" alt="" width="112" height="112" />
             </a>
           </li>
         </ul>
-        <a href="mailto:you@email.com" class="email-icon">
-          <img src="email" alt="" />
-        </a>
+
       </div>
     </div>
   </header>
   <!-- home -->
   <section class="home" id="home">
     <img src="https://i.blogs.es/ca21a4/editar/840_560.jpg" class="home-img" alt="" />
-    
+
     <div class="home-content">
       <h2>
-        El millor lloc<span class="highlight">per estudiar </span><br />
-        <span class="highlight">Els teus projectes</span>
+        El millor lloc<span class="highlight">per estudiar </span><br>
+        <span class="highlight">els teus projectes</span>
       </h2>
       <p></p>
       <a href="#zones" class="btn moving">Començar<i class="fas fa-arrow-right p-1 ps-2"></i></a>
     </div>
   </section>
   <!--QUE OFERIM-->
-  <div data-draggable="true" style="position: relative" >
+  <div data-draggable="true" style="position: relative">
     <grammarly-extension data-grammarly-shadow-root="true"
       style="position: absolute; top: 0px; left: 0px; pointer-events: none" class="cGcvT"></grammarly-extension>
     <grammarly-extension data-grammarly-shadow-root="true"
@@ -90,69 +91,70 @@
           Quins espais ofereix aquest local?
         </h2>
         <div class="row gx-lg-5 mb-5 align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0 "data-aos="fade-down">
+          <div class="col-md-6 mb-4 mb-md-0 " data-aos="fade-down">
             <img
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDN8fG1lZXRpbmd8ZW58MHx8fHwxNjUwNDcxMDMx&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080"
-              class="w-100 shadow-4-strong fotofer mb-4 " alt="" aria-controls="#picker-editor" />
+              class="w-100 shadow-4-strong fotofer mb-4 " alt="" />
           </div>
-          <div class="col-md-6 mb-4 mb-md-0"data-aos="fade-right">
-            <h3 class="fw-bold titolofer" spellcheck="false">Zona Privada</h3>
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+            <h3 class="fw-bold titolofer" spellcheck="false">Sales privades</h3>
             <div class="mb-2 text-warning small">
-              <i class="fas fa-tv me-2" aria-controls="#picker-editor"></i><span>Sales Insonores&nbsp;</span>
+              <i class="fas fa-tv me-2"></i><span> Insonores, projectors, pissarres,
+                etc&nbsp;</span>
             </div>
             <p class="oferimtxt">
               Oferim als nostres clients dues excepcionals sales de reunió
-              equipades amb sis ordinadors i les parets insonorificades de
-              manera que no sortira cap soroll tant de l'exterior com de
-              l'interior.
+              equipades amb sis ordinadors i les parets insonoritzades de
+              manera que el soroll no entrarà ni sortirà de la sala.
             </p>
             <p class="oferimtxt"></p>
-            <a class="btn btn-primary moving" href="zona_Privada/index.html" role="button"
-              aria-controls="#picker-editor" target="_blank">Més Info <i class="fas fa-info-circle p-1 ps-2"></i></a>
+            <a class="btn btn-primary moving" href="zona_Privada/index.html" role="button" target="_self">Més Info <i
+                class="fas fa-info-circle p-1 ps-2"></i></a>
           </div>
         </div>
         <div class="row gx-lg-5 mb-5 flex-lg-row-reverse align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0 "data-aos="fade-left">
+          <div class="col-md-6 mb-4 mb-md-0 " data-aos="fade-left">
             <img
               src="https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDZ8fG9mZmljZXxlbnwwfHx8fDE2NTA0Nzc2OTQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080"
-              class="w-100 shadow-4-strong fotofer mb-4 " alt="" aria-controls="#picker-editor" />
+              class="w-100 shadow-4-strong fotofer mb-4 " alt="" />
           </div>
-          <div class="col-md-6 mb-4 mb-md-0"data-aos="fade-up-right">
-            <h3 class="fw-bold titolofer">Sala principal d'estudi</h3>
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up-right">
+            <h3 class="fw-bold titolofer">Sala principal</h3>
             <div class="mb-2 text-warning small">
-              <i class="fas fa-tv me-2" aria-controls="#picker-editor"></i><span> Zona Privada</span>
+              <i class="fas fa-tv me-2"></i><span> 20 ordinadors amb els millors
+                components&nbsp;</span>
             </div>
             <p class="oferimtxt">
-              En aquest local privat tambe s'ofereix la zona comunitaria
-              principal on es disposa de 20 ordinadors a disposició del
-              client, es pot treballar sincronitzada-ment des de qualsevol
-              ordinador de la sala amb el teu usuari corresponent.
+              En aquest local privat també s'ofereix la zona comunitària
+              principal on disposem de 20 ordinadors d'ultima generació a disposició del
+              client. Als nostres ordinadors pots treballar sincronitzadament des de qualsevol
+              altre ordinador de la sala amb el teu usuari corresponent.
             </p>
-            <a class="btn btn-primary moving" href="sala_Pincipal/index.html" role="button"
-              aria-controls="#picker-editor" target="_blank">Més Info <i class="fas fa-info-circle p-1 ps-2"></i></a>
+            <a class="btn btn-primary moving" href="sala_Pincipal/index.html" role="button" target="_self">Més Info <i
+                class="fas fa-info-circle p-1 ps-2"></i></a>
           </div>
         </div>
         <div class="row gx-lg-5 mb-5 align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0 "data-aos="fade-up-left">
+          <div class="col-md-6 mb-4 mb-md-0 " data-aos="fade-up-left">
             <img
               src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDd8fG1lZXRpbmd8ZW58MHx8fHwxNjUwNDcxMDMx&ixlib=rb-1.2.1&q=80&w=1080"
-              class="w-100 shadow-4-strong fotofer mb-4 " alt="" aria-controls="#picker-editor" />
+              class="w-100 shadow-4-strong fotofer mb-4 " alt="" />
           </div>
-          <div class="col-md-6 mb-4 mb-md-0"data-aos="fade-down-right">
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-down-right">
             <h3 class="fw-bold titolofer">Taules per estudi personal</h3>
             <div class="mb-2 text-warning small">
-              <i class="fas fa-tv me-2" aria-controls="#picker-editor">
-                Zona personal</i><span>&nbsp;</span>
+              <i class="fas fa-tv me-2">
+                Connexió a Internet, comoditat i bona il·luminació</i><span>&nbsp;</span>
             </div>
             <p class="oferimtxt" spellcheck="false">
-              També ofereix una secció especial per poder treballar feina a má
-              o amb un portátil personal de manera que pots disfrutar de mes
-              espai lliure i sense molesties a la taula. També podras
-              disfrutar d'unes lampares de llum progressives per millorar la
+              També ofereim una secció especial per poder fer feina a mà
+              o amb un portàtil personal de manera que pots disfrutar de més
+              espai lliure i sense molèsties a la taula. També podràs
+              disfrutar d'unes làmpares de llum progressives per millorar la
               visió de la vista.
             </p>
-            <a class="btn btn-primary moving" href="estudi_Personal/index.html" role="button"
-              aria-controls="#picker-editor" target="_blank">Més Info <i class="fas fa-info-circle p-1 ps-2"></i></a>
+            <a class="btn btn-primary moving" href="estudi_Personal/index.html" role="button" target="_self">Més Info <i
+                class="fas fa-info-circle p-1 ps-2"></i></a>
           </div>
         </div>
       </section>
@@ -167,58 +169,57 @@
     </a>
   </div>
   <!-- services -->
-  <section id="services" >
+  <section id="services">
     <div class="title">
-      <h2>
-        <span class="highlight">Pero...</span> i
+      <h2 data-aos="fade-left">
+        <span class="highlight">Pero...</span>
         <span class="highlight">Que Oferim?</span>
       </h2>
-      <p>
-        Som un <span class="highlight1">local especialitzat en zona d'estudi lliure,</span> tambe pot ser
+      <p data-aos="fade-up-right">
+        Som un <span class="highlight1">local especialitzat en zona d'estudi lliure.</span> També pot ser
         utilitzat per fer<span class="highlight1"> reunions i quedades grupals privades</span> de tal manera
-        que ningu podra molestar durant la vostre estancia en el local.
+        que ningú podrà molestar durant la vostre estància al local.
         Oferim diferentes quotes per varies situacions, per exemple si només
         hi vols anar un dia, una setmana, durant un mes i inclús durant un any.
       </p>
     </div>
     <div class="services">
-      <div class="service">
+      <div class="service" data-aos="fade-up-left">
         <div class="icon">
           <img src="https://www.allaboutlean.com/wp-content/uploads/2018/07/Open-24-7.png" alt="" class="serviceimg" />
         </div>
         <h3>Obert 24/7</h3>
         <p>
           El local está obert cada dia les 24 hores, pots venir el moment que
-          vulguis a estudiar el que necessitis
+          vulguis a estudiar o treballar el que necessitis
         </p>
       </div>
-      <div class="service">
+      <div class="service" data-aos="fade-down-right">
         <div class="icon">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ5xevoE9yvEBigZPJ5NOCXxxbv8uKZhmI3Q&usqp=CAU" alt="" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ5xevoE9yvEBigZPJ5NOCXxxbv8uKZhmI3Q&usqp=CAU"
+            alt="" />
         </div>
-        <h3>Assisten Técnic</h3>
+        <h3>Assistent Tècnic</h3>
         <p>
-          Disposem de servei d'assistencia técnica per si passes algun problema amb
-          algun dispositiu de la sala.
+          Disposem de servei d'assistència tècnica per si hi hagués cap problema amb algun dispositiu del local.
         </p>
       </div>
-      <div class="service">
+      <div class="service" data-aos="fade-down-left">
         <div class="icon">
-          <img src="" alt="" />
         </div>
-        <h3>Zona d'impressores</h3>
-        <p>
+        <h3 data-aos="fade-up">Zona d'impressores</h3>
+        <p data-aos="fade-down">
           Disposem d'una zona on es poden utilitzar les impressores per imprimir treballs
           o fitxers que siguin necessaris sense cap cost adicional.
         </p>
       </div>
-
+    </div>
   </section>
   <!-- membresia -->
-  <section id="work" >
+  <section id="work">
     <div class="title">
-      <h1><span class="highlight">Ofertes per la Membresia</span></h1>
-      <p>
+      <h1><span class="highlight" data-aos="fade-right">Ofertes per la Membresia</span></h1>
+      <p data-aos="fade-left">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
         iusto molestias accusamus rem nobis est, et laborum harum doloremque
         nemo non, minima quos totam labore maxime iste alias ut esse? Repellat
@@ -240,10 +241,10 @@
 
     <section draggable="false" class="container pt-5" data-v-271253ee="">
       <section class="mb-10">
-        <h2 class="fw-bold text-center mb-5">Preus d'inscripció</h2>
+        <h2 class="fw-bold text-center mb-5" data-aos="fade-up-right">Preus d'inscripció</h2>
         <div class="row gx-lg-5">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up-left">
               <div class="card-header text-center pt-4">
                 <p class="text-uppercase"><strong>SETMANAL</strong></p>
                 <h3 class="mb-4">
@@ -265,7 +266,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-left">
               <div class="card-header text-center pt-4">
                 <p class="text-uppercase"><strong>MENSUAL</strong></p>
                 <h3 class="mb-4">
@@ -288,7 +289,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-down-right">
               <div class="card-header text-center pt-4">
                 <p class="text-uppercase"><strong>ANUAL</strong></p>
                 <h3 class="mb-4">
@@ -317,123 +318,109 @@
       </section>
     </section>
     <!---->
-    </div>
     <!--equipo-->
   </section>
-  <div data-draggable="true"  style="position: relative" draggable="false">
+  <div data-draggable="true" style="position: relative" draggable="false">
     <!---->
     <!---->
-    <section draggable="false" class="overflow-hidden pt-5" data-v-271253ee=""  id="creadors">
+    <section draggable="false" class="overflow-hidden pt-5" data-v-271253ee="" id="creadors">
       <section class="mb-10 text-center">
-        <h2 class="fw-bold mb-10 creadors">
+        <h2 class="fw-bold mb-10 creadors" data-aos="fade-down-left">
           <span>Coneix els</span> <u class="text-success">creadors</u>
         </h2>
         <div class="row gx-lg-5">
-          <div class="col-lg-4 mb-10 mb-lg-0">
+          <div class="col-lg-4 mb-10 mb-lg-0" data-aos="fade-up">
             <div class="card shadow-2-strong h-100">
               <div class="d-flex justify-content-center" style="margin-top: -75px">
                 <img src="https://www.seekpng.com/png/detail/413-4139803_unknown-profile-profile-picture-unknown.png"
-                  class="rounded-circle shadow-5-strong" alt="" style="width: 150px; height: 150px"
-                  aria-controls="#picker-editor" draggable="false" />
+                  class="rounded-circle shadow-5-strong" alt="" style="width: 150px; height: 150px" draggable="false" />
               </div>
               <div class="card-body" style="margin-bottom:80px;">
                 <h5 class="fw-bold">Pol Ramos</h5>
                 <p class="text-muted">Admin.sist.microinf</p>
-                <ul class="list-unstyled mb-0">
+                <div class="list-unstyled mb-0">
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-github text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-github text-success"></i>
                   </a>
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-twitter text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-twitter text-success"></i>
                   </a>
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-linkedin-in  text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-linkedin-in  text-success"></i>
                   </a>
-                </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-10 mb-lg-0">
+          <div class="col-lg-4 mb-10 mb-lg-0" data-aos="fade-down">
             <div class="card shadow-2-strong h-100">
               <div class="d-flex justify-content-center" style="margin-top: -75px">
                 <img src="https://www.seekpng.com/png/detail/413-4139803_unknown-profile-profile-picture-unknown.png"
-                  class="rounded-circle shadow-5-strong" alt="" style="width: 150px; height: 150px"
-                  aria-controls="#picker-editor" draggable="false" />
+                  class="rounded-circle shadow-5-strong" alt="" style="width: 150px; height: 150px" draggable="false" />
               </div>
               <div class="card-body" style="margin-bottom:80px;">
                 <h5 class="fw-bold">Jordi Manyà</h5>
                 <p class="text-muted">Admin.sist.microinf</p>
-                <ul class="list-unstyled mb-0">
+                <div class="list-unstyled mb-0">
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-github  text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-github  text-success"></i>
                   </a>
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-twitter  text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-twitter  text-success"></i>
                   </a>
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-linkedin-in  text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-linkedin-in  text-success"></i>
                   </a>
-                </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-10 mb-lg-0">
+          <div class="col-lg-4 mb-10 mb-lg-0" data-aos="fade-right">
             <div class="card shadow-2-strong h-100">
               <div class="d-flex justify-content-center" style="margin-top: -75px">
                 <img src="eugeni.JPG" class="rounded-circle shadow-5-strong" alt="" style="width: 160px; height: 160px;"
-                  aria-controls="#picker-editor" draggable="false" />
+                  draggable="false" />
               </div>
               <div class="card-body">
                 <h5 class="fw-bold">Eugeni Soto</h5>
                 <p class="text-muted">Admin.sist.microinf</p>
-                <ul class="list-unstyled mb-0">
+                <div class="list-unstyled mb-0">
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-github  text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-github  text-success"></i>
+                  </a>
+                  <a href="https://twitter.com" class="px-1" draggable="false">
+                    <i class="fab fa-twitter  text-success"></i>
                   </a>
                   <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-twitter  text-success" aria-controls="#picker-editor"></i>
+                    <i class="fab fa-linkedin-in  text-success"></i>
                   </a>
-                  <a href="#!" class="px-1" draggable="false">
-                    <i class="fab fa-linkedin-in  text-success" aria-controls="#picker-editor"></i>
-                  </a>
-                </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <a class="btn" href="./qui_Som/index.html">Vols saber més de nosaltres?</a>
       </section>
     </section>
     <!---->
   </div>
   <!-- contact -->
-  <section id="contact" >
+  <section id="contact" data-aos="fade-up-right">
     <div class="title">
       <h2><span class="highlight"> Contacta amb nosaltres</span></h2>
       <p>
-       Qualsevol dubte o pregunta contacta amb nosaltres i et respondrem el mes aviat possible.
+        Qualsevol dubte o pregunta contacta amb nosaltres i et respondrem el mes aviat possible.
       </p>
     </div>
-    <?php 
-	    $primerNom = $_POST['primerNom'];
-      $cognom = $_POST['cognom'];
-	    $correu = $_POST['correu'];
-      $motiu = $_POST['motiu'];
-	    $missatge = "Nom: "$primerNom\n "Email: "$correu\n "Mensaje: " .$_POST['missatge'];
-
-
-	if(mail('manyajordi@gmail.com', $motiu, $missatge)){
-		echo "Correo enviado";
-	}
- ?>
-    <div class="contact">
+    <div class="contact" data-aos="fade-down-left">
       <div class="contact-form">
-        <form method="post" action="">
+        <form method="post">
           <div class="row">
             <div class="input50">
               <input type="text" placeholder="Primer Nom" name="primerNom" />
             </div>
             <div class="input50">
-              <input type="text" placeholder="Cognom" name="cognom"/>
+              <input type="text" placeholder="Cognom" name="cognom" />
             </div>
           </div>
           <div class="row">
@@ -441,7 +428,7 @@
               <input type="text" placeholder="Correu Electronic" name="correu" />
             </div>
             <div class="input50">
-              <input type="text" placeholder="Motiu" name="motiu"/>
+              <input type="text" placeholder="Motiu" name="motiu" />
             </div>
           </div>
           <div class="row">
@@ -462,14 +449,16 @@
           <div class="details">
             <h4>Adreça del Local</h4>
             <p>Carrer de Rosselló 45, Barcelona, Catalunya</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.531587260105!2d2.1429321155055936!3d41.38426057926439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a281d6527b6d%3A0x88d734cb3fa35630!2sCarrer%20del%20Rossell%C3%B3%2C%2045%2C%2008029%20Barcelona!5e0!3m2!1ses!2ses!4v1652110642948!5m2!1ses!2ses" width="180" height="200" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.531587260105!2d2.1429321155055936!3d41.38426057926439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a281d6527b6d%3A0x88d734cb3fa35630!2sCarrer%20del%20Rossell%C3%B3%2C%2045%2C%2008029%20Barcelona!5e0!3m2!1ses!2ses!4v1652110642948!5m2!1ses!2ses"
+              width="180" height="130" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <div class="info-box">
           <img src="email" class="contact-icon" alt="" />
           <div class="details">
             <h4>Correu</h4>
-            <a href="mailto:pol.rm2004@gmail.com">Focuszone@gmail.com</a>
+            <a href="mailto:focuszone@gmail.com">focuszone@gmail.com</a>
           </div>
         </div>
         <div class="info-box">
@@ -490,16 +479,17 @@
   <!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.6/fullpage.min.js"></script>
 <script src='fullcalendar-5.11.0/lib/main.js'></script>
-  --><!--
+  -->
+  <!--
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.5/tsparticles.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.5/tsparticles.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
+
   <script src="script.js"></script>
 </body>
 

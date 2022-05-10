@@ -68,6 +68,7 @@
     flex-direction: row-reverse;
     padding-right: 40px;
     opacity: .6;
+    z-index:1000;
 }
 .pujar:hover{
     opacity: 1;
@@ -80,9 +81,14 @@
 }
 .sticky {
     background-color: #a0a0a0;
+    background-image: url("arrow-up.svg");
     padding:20px;
+    background-position:cover;
+    background-position: 50% 30%;
+    background-repeat:no-repeat;
     width: fit-content;
     border-radius: 50%;
+    z-index:1000;
 }
 
 .focus {
@@ -158,6 +164,8 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
     scroll-behavior:smooth;
+    letter-spacing:1px;
+    word-spacing:1px;
 }
 
 .btn {

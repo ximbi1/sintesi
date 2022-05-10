@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
 
-:root {
-    --main-color: #0ab451;
-    --secondary-color: #c4c4c4;
-    --highlight-color: #c4a2fc;
-    --text-color: #111;
-    --background-color: #0d8e89;
-    --neon-text-color: #f40;
-    --neon-border-color: #08f;
-}
 body {
   font-family: Georgia, Times New Roman, serif;
   line-height: 1.5;
-  margin: 0 auto;
   scroll-behavior:smooth;
   letter-spacing:1px;
   word-spacing:1px;
+  backdrop-filter:blur(3px);
+  margin: 0 auto;
   background-color: #0d8e89;
   background-size: cover;
-  background-position: 0 80%;
-  background-image: url("https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=Mnw5NjI0M3wwfDF8c2VhcmNofDZ8fG9mZmljZXxlbnwwfHx8fDE2NTA0Nzc2OTQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080");
+  background-position: 50% 0;
+  background-image:url("https://brico-afeb.com/wp-content/uploads/2022/04/teamwork-g62d0f9995_1920-1.jpg");
 }
 
 header,
@@ -60,10 +52,7 @@ figure {
 .post-body p + p {
   margin-top: 1.5em;
 }
-.highlight {
-    background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 50%, var(--highlight-color) 50%);
-    padding: 0 0.25rem;
-}
+
 .post-body {
   box-sizing: border-box;
   max-width: 50em;
@@ -86,7 +75,9 @@ figure {
 }
 
 .post-header {
-
 }
-
-
+.historia{
+  font-family: 'Mitr', sans-serif;
+  text-align: left;
+  
+}
