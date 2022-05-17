@@ -6,11 +6,12 @@
     --text-color: #111;
     --background-color: #0d8e89;
     --neon-text-color: #f40;
-    --neon-border-color: #08f;
+    --neon-border-color: #08ff;
 }
 .inire {
   
 }
+
 .creadors {
   margin-bottom: 90px;
 }
@@ -21,6 +22,7 @@
 
 .oferimtxt {
     color: var(--text-color);
+    font-size: 16px
 }
 
 .titolofer {
@@ -101,10 +103,12 @@
     font-size: 50px;
     line-height: 5vw;
     text-shadow: 0 0 3vw #f40a35;
+    cursor: pointer;
 }
 
 .hour {
     position: absolute;
+    cursor:  pointer;
     top: 50px;
     left: 50px;
     font-family: neon;
@@ -167,6 +171,7 @@ body {
     letter-spacing:1px;
     word-spacing:1px;
 }
+
 
 .btn {
     cursor: pointer;
@@ -279,11 +284,6 @@ body {
     transform: scale(0.5);
 }
 
-.navigation .email-icon {
-    position: absolute;
-    bottom: 20px;
-}
-
 
 /* SECTIONS */
 
@@ -293,7 +293,7 @@ section {
     min-height: 100vh;
     align-items: center;
     padding: 100px 40px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 h2 {
@@ -307,6 +307,12 @@ p {
     line-height: 1.5;
     font-weight: 300;
 }
+/*
+p:first-letter {
+  font-weight:600;
+  line-height:1.2;
+  font-size: 1.4rem;
+}*/
 
 
 /* HOME SECTION */
@@ -320,6 +326,7 @@ section.home {
     position: relative;
     z-index: 10;
     max-width: 600px;
+    
 }
 
 /* Reference: https://stackoverflow.com/questions/43683187/how-can-i-create-custom-underline-or-highlight-for-text-in-html-or-css */
@@ -552,7 +559,7 @@ section.home {
         font-size: 2.3rem;
     }
     section {
-        padding: 100px;
+        padding: 150px;
     }
     .services {
       grid-template-columns: repeat(3, 3fr);
@@ -581,8 +588,9 @@ section.home {
         padding: 60px 40px 20px;
     }
 
-#calendari {
-  height: 500px;
+.cGcvt {
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  pointer-events: none
 }
-/*calendari*/
-

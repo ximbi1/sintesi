@@ -45,8 +45,7 @@ window.onload = function loadStuff() {
   img.onload = function() {
     header.className += ' ' + enhancedClass;
   };
-  // Finally, trigger the whole preloading chain by giving the dummy
-  // image its source.
+
   if (bigSrc) {
     img.src = bigSrc;
   }
